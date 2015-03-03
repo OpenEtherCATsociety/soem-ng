@@ -1,3 +1,7 @@
+build/
+src/config.h
+src/version.h
+
 # Object files
 *.o
 *.ko
