@@ -1,0 +1,46 @@
+
+#ifndef OPTIONS_H
+
+#cmakedefine WITH_MALLOC
+
+#ifndef LOG_LEVEL
+#define LOG_LEVEL         LOG_LEVEL_@LOG_LEVEL@
+#endif
+
+#ifndef EC_NET_DEBUG
+#define EC_NET_DEBUG      LOG_STATE_@EC_NET_DEBUG@
+#endif
+
+#ifndef EC_EEPROM_DEBUG
+#define EC_EEPROM_DEBUG   LOG_STATE_@EC_EEPROM_DEBUG@
+#endif
+
+#ifndef EC_COE_DEBUG
+#define EC_COE_DEBUG      LOG_STATE_@EC_COE_DEBUG@
+#endif
+
+#ifndef EC_NIC_DEBUG
+#define EC_NIC_DEBUG      LOG_STATE_@EC_NIC_DEBUG@
+#endif
+
+#ifndef EC_ALLOC_DEBUG
+#define EC_ALLOC_DEBUG    LOG_STATE_@EC_ALLOC_DEBUG@
+#endif
+
+#ifndef MAX_NETS
+#define MAX_NETS          @MAX_NETS@
+#endif
+
+#ifndef MAX_SLAVES
+#define MAX_SLAVES        @MAX_SLAVES@
+#endif
+
+#ifndef MAX_STRINGS
+#define MAX_STRINGS       @MAX_STRINGS@
+#endif
+
+#ifndef MAX_STRING_LENGTH
+#define MAX_STRING_LENGTH @MAX_STRING_LENGTH@
+#endif
+
+#endif  /* OPTIONS_H */
