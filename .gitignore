@@ -1,6 +1,8 @@
 build/
-src/config.h
+src/options.h
 src/version.h
+*.in
+*~
 
 # Object files
 *.o
