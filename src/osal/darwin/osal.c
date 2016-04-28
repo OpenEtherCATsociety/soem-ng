@@ -1,9 +1,11 @@
 
-#include <osal.h>
-#include <options.h>
-#include <log.h>
+#include "osal.h"
+#include "options.h"
+#include "log.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 
 void os_log (int type, const char * fmt, ...)
 {
@@ -22,3 +24,9 @@ void os_log (int type, const char * fmt, ...)
    vprintf (fmt, list);
    va_end (list);
 }
+
+void * os_malloc (size_t size)
+{
+    return malloc (size);
+}
+

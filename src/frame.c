@@ -1,9 +1,9 @@
 
-#include <frame.h>
-#include <nic.h>
+#include "frame.h"
+#include "nic.h"
 
-#include <options.h>
-#include <log.h>
+#include "options.h"
+#include "log.h"
 
 #include <stdint.h>
 #include <string.h>
@@ -278,7 +278,7 @@ int ec_frame_txrx (ec_nic_t * nic, ec_frame_t * frame)
    int length = sizeof(ec_frame_t) + frame->length + sizeof(uint16_t);
    int result;
    ec_pdu_t * pdu;
-   ec_pdu_t * previous;
+   ec_pdu_t * previous = NULL;
    uint16_t wkc;
 
    pdu = ec_frame_first_pdu (frame);
@@ -293,6 +293,7 @@ int ec_frame_txrx (ec_nic_t * nic, ec_frame_t * frame)
    }
 
    /* Clear NEXT field of final PDU */
+   CC_ASSERT(previous != NULL);
    previous->len &= ~EC_PDU_LENGTH_NEXT;
 
    /* Set DLPDU flag */

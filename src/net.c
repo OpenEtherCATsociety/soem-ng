@@ -1,16 +1,16 @@
 
-#include <net.h>
-#include <nic.h>
+#include "net.h"
+#include "nic.h"
 
-#include <options.h>
-#include <version.h>
-#include <log.h>
-#include <osal.h>
+#include "options.h"
+#include "version.h"
+#include "log.h"
+#include "osal.h"
 
-#include <frame.h>
-#include <eeprom.h>
+#include "frame.h"
+#include "eeprom.h"
 #include <string.h>
-#include <alloc.h>
+#include "alloc.h"
 
 static void ec_net_add_slave (ec_net_t * net, ec_slave_t * slave)
 {

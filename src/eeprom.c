@@ -1,10 +1,10 @@
 
-#include <eeprom.h>
-#include <ec_types.h>
-#include <frame.h>
+#include "eeprom.h"
+#include "ec_types.h"
+#include "frame.h"
 
-#include <options.h>
-#include <log.h>
+#include "options.h"
+#include "log.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -181,7 +181,7 @@ static int ec_eeprom_read32 (ec_net_t * net, ec_slave_t * slave, int address,
    size = (size > 4) ? 4 : size;
    memcpy (data, pdu->data, size);
 
-   return size;
+   return (int)size;
 }
 
 int ec_eeprom_read (ec_net_t * net, ec_slave_t * slave, int address,

@@ -1,16 +1,16 @@
 
-#include <config.h>
+#include "config.h"
 
-#include <options.h>
-#include <log.h>
+#include "options.h"
+#include "log.h"
 
-#include <frame.h>
+#include "frame.h"
 #include <string.h>
 
 int ec_config_static (ec_net_t * net, ec_slave_config_t * cfg)
 {
    uint8_t buffer[1400];
-   ec_frame_t * frame = ec_frame_init (buffer);
+   ec_frame_t * frame;
    ec_pdu_t * pdu;
    int wkc;
    ec_slave_t * slave;

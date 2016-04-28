@@ -1,7 +1,7 @@
 
 set(OSAL_SOURCES
   osal/darwin/osal.c
-  osal/darwin/socket.c
+  osal/darwin/bpf.c
   )
 set(OSAL_INCLUDES
   osal/darwin
