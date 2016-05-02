@@ -7,8 +7,8 @@ extern "C"
 {
 #endif
 
-#include <ec_api.h>
-#include <ec_types.h>
+#include "ec_api.h"
+#include "ec_types.h"
 
 CC_PACKED_BEGIN
 typedef struct CC_PACKED ec_frame
@@ -175,7 +175,7 @@ void ec_frame_FPWR16 (ec_frame_t * frame, uint16_t adp, uint16_t ado,
 void ec_frame_FPWR32 (ec_frame_t * frame, uint16_t adp, uint16_t ado,
                       uint32_t value);
 
-#include <nic.h>
+#include "nic.h"
 int ec_frame_txrx (ec_nic_t * nic, ec_frame_t * frame);
 
 #ifdef __cplusplus

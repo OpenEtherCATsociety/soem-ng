@@ -1,6 +1,6 @@
 
-#include <sii.h>
-#include <eeprom.h>
+#include "sii.h"
+#include "eeprom.h"
 
 #include <string.h>
 #include <stdio.h>

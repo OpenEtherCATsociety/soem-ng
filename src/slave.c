@@ -1,9 +1,9 @@
 
-#include <slave.h>
+#include "slave.h"
 
-#include <options.h>
-#include <log.h>
-#include <osal.h>
+#include "options.h"
+#include "log.h"
+#include "osal.h"
 
 ec_slave_t * ec_slave_get_next (ec_slave_t * slave)
 {

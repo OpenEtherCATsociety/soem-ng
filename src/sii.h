@@ -7,8 +7,8 @@ extern "C"
 {
 #endif
 
-#include <ec_api.h>
-#include <ec_types.h>
+#include "ec_api.h"
+#include "ec_types.h"
 
 #ifdef __cplusplus
 }

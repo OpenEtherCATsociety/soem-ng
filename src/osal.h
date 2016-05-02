@@ -9,7 +9,7 @@ extern "C"
 
 #include <stdarg.h>
 #include <stddef.h>
-#include <nic.h>
+#include "nic.h"
 
 void os_log (int type, const char * fmt, ...);
 void * os_malloc (size_t size);

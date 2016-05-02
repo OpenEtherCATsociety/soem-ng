@@ -7,8 +7,8 @@ extern "C"
 {
 #endif
 
-#include <ec_api.h>
-#include <ec_types.h>
+#include "ec_api.h"
+#include "ec_types.h"
 
 ec_net_t * ec_alloc_net (void);
 ec_slave_t * ec_alloc_slave (void);

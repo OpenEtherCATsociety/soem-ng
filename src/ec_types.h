@@ -10,8 +10,8 @@ extern "C"
 #include <stdint.h>
 #include <stddef.h>
 
-#include <cc.h>
-#include <osal.h>
+#include "cc.h"
+#include "osal.h"
 
 typedef struct ec_general
 {
